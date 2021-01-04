@@ -1,0 +1,46 @@
+\cleardoublepage
+
+\section*{Kurzübersicht}
+
+\subsection*{Situation}
+Mobilgeräte verwenden für die Suche nach WLAN-Netzwerken sogenannte Probe-Requests.
+Diese Nachrichten werden an alle Geräte im Sendebereich des Mobilgeräts ausgesandt
+und enthalten oftmals weitere Informationen, wie beispielsweise bekannte 
+Netzwerke oder unterstützte Datenraten.
+Bis vor einigen Jahren wurde in diesen Probe-Requests die einzigartige 
+Geräteadresse mitgesendet. Nun wird diese Adresse jeweils zufallsgeneriert.
+
+Ein Verfahren, welches erlaubt, Mobilgeräte durch diese Probe-Requests zu 
+erkennen, voneinander zu unterscheiden und über längere Zeit zu 
+verfolgen, kann in vielen Anwendungen Gebrauch finden. Ein Beispiel währe 
+die automatische Fahrgastzählung im moblilen Verkehr.
+
+
+\subsection*{Vorgehen}
+In dieser Arbeit wurden Messungen durchgeführt, um das Verhalten von Mobilgeräten
+zu untersuchen. Anhand der Messergebnisse wurde ein Prototyp in Pyhton entwickelt,
+welcher in der Lage ist, Mobilgeräte voneinander zu unterscheiden und die 
+Anzahl Mobilgeräte im Empfangsbereich der Messantenne zu ermitteln.
+
+\subsection*{Ergebnisse}
+Die Auswertung der Messergebnisse hat ergeben, dass iOS-Geräte im Verhalten
+beinanhe identisch sind. Es ist schwierig bis unmöglich, diese Geräte 
+anhand ausgesendeter Probe-Requests zu unterscheiden. 
+Android-Geräte haben im Verhalten noch genügend Unterschiede, dass eine 
+Unterteilung möglich ist. Eine längere Verfolgung lässt sich aber auch 
+nicht umsetzen.  
+
+\subsection*{Ausblick}
+Gerätehersteller verbessern mit jeder neuen Betriebssystemversion das Verhalten 
+im Bezug auf die Erkennbarkeit und Unterscheidbarkeit. Zum einen weil gewisse 
+Verfahren aufgrund neuer Normen und Privatsphäregesetze vorausgesetzt werden,
+aber auch weil die Hersteller die eigenen Technologien für die Lokalisierung 
+ihrer Geräte dadurch besser verkaufen können.
+
+Es ist möglich, dass mit zusätzlichen Messungen auf weiteren Mobilgeräten 
+weitere Verhaltensunterschiede erkannt werden können, die für eine Ver-besserung
+der Verfahren verwendet werden können. Ausserdem kann mit hinzuziehen weiterer
+Signalquellen - beispielsweise Bluetooth - die Unterscheidung von Mobilgeräten 
+weiter verfeinert werden. 
+
+

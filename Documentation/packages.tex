@@ -1,0 +1,105 @@
+% Packages
+%% ========
+
+%% Language and encodings
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % Due to vowels.
+\usepackage[english]{babel} % Choose english, american, ngerman
+\usepackage{datetime} % time depending on locale
+
+%% Layout
+\usepackage{multicol}
+\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{float}
+\usepackage{fancyhdr} %To customize the headers and footers.
+
+%% Font
+\usepackage{pifont}
+\usepackage[sc]{mathpazo}
+\usepackage[german=swiss]{csquotes} % swiss quotes with \enquote{Text}
+
+%% Math
+\usepackage{amsmath,amsfonts,amssymb,mathrsfs, mathtools}
+\usepackage[amsmath,thmmarks]{ntheorem}
+
+%% Graphics, figures, listings
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\graphicspath{ {images/} }
+\usepackage{tcolorbox}
+\usepackage{chngcntr}
+
+%% Tables
+\usepackage{array}
+\usepackage{ltxtable}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{multirow} % Multi-rowed cells in tabulars
+\usepackage{booktabs} % \cmidrule or \addlinespace
+\usepackage{rotating} % rotate table
+\usepackage{longtable}
+\usepackage{dcolumn}
+\usepackage{tabu}
+\renewcommand{\arraystretch}{1.25}
+
+%% Include external pdf
+\usepackage{pdfpages}
+
+%% References
+\usepackage{varioref}
+
+%% Bibliography
+\usepackage[style=numeric,sorting=ynt,backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+%% Code listings
+\usepackage[linesnumbered, lined, boxed, commentsnumbered]{algorithm2e}
+\usepackage{listings}
+
+\definecolor{DarkPurple}{rgb}{0.4,0.1,0.4}
+\definecolor{DarkCyan}{rgb}{0.0,0.5,0.4}
+\definecolor{LightLime}{rgb}{0.3,0.5,0.4}
+\definecolor{Blue}{rgb}{0.0,0.0,1.0}
+\lstdefinestyle{eclipse-style}{
+	language=Java,  
+	columns=flexible,
+	showstringspaces=false,     
+	basicstyle=\footnotesize\ttfamily, 
+	keywordstyle=\bfseries\color{DarkPurple},
+	commentstyle=\color{LightLime},
+	stringstyle=\color{Blue}, 
+	escapeinside={(*@}{@*)}, % latex scope within code      
+	breaklines=true,
+	breakatwhitespace=true,
+	showspaces=false,
+	showtabs=false,
+	tabsize=4,
+	morekeywords={length},
+	numbers=none,
+	frame=single,
+}
+\lstset{style=eclipse-style}
+
+\usepackage{adjustbox} %for step-by-step instructions
+
+% to draw folder structures
+\usepackage{dirtree}
+
+% to draw
+\usepackage{tikz}
+
+% to show keyboard keys
+% usage: \menu{File, Save As...}
+% usage: \directory{adv-ui/ui-core}
+% usage: \keys{\cmd+\shift+S}
+\usepackage{menukeys}
+
+% Hyperlinks
+% Must be loaded at the end!
+\colorlet{purple}[rgb]{red!75!green!50!blue}
+\usepackage[colorlinks=true,linkcolor=purple,citecolor=purple,filecolor=black,anchorcolor=black, urlcolor=black, runcolor=black, menucolor=black]{hyperref}
+\def\UrlBreaks{\do\/\do-}

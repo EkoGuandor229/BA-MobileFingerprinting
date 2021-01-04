@@ -1,0 +1,152 @@
+%!TeX spellcheck = en_US
+
+% ========================================
+% Based on thesis template by Michael Wieland (https://github.com/michiwieland/hsr-thesis)
+% Updated by Aaron Meier and Dennis Ligtenberg
+% Template version: v1.1
+% ========================================
+
+% Document
+% ====================
+\documentclass[11pt, a4paper, oneside, titlepage]{memoir}
+
+
+% Package Imports
+% ====================
+\input{packages}
+
+% Document Information
+% ====================
+\newcommand\thesisAuthorA{Janik Schlatter}
+\newcommand\thesisAuthorB{Mike Schmid}
+\newcommand\thesisTitle{Mobile Fingerprinting}
+\newcommand\thesisSubject{Bachelorarbeit}
+\newcommand\thesisUniversity{OST - Ostschweizer Fachhochschule \\ (Campus Rapperswil-Jona)}
+\newcommand\thesisDepartment{Departement Informatik}
+\newcommand\thesisAdvisor{Prof. Beat Stettler} % Form: Title Firstname Lastname
+\newcommand\thesisProjectPartner{INS} % Form: Company, Location
+\newcommand\thesisExternalCoExaminer{Martin Willi} % Form: Title Firstname Lastname
+\newcommand\thesisInternalCoExaminer{Claudio Fuchs} % Form: Title Firstname Lastname
+\newcommand\thesisKeywords{Security, Privacy, Mobile, WLAN, Research} % Comma-separated list of keywords
+\newcommand\thesisPeriod{Herbstsemester 2020/2021} % Form: Date from - Date until
+\newcommand\footerTitle{Mobile Fingerprinting}
+
+
+\hypersetup{
+	pdfauthor={\thesisAuthorA, \thesisAuthorB},
+	pdftitle={\thesisTitle},
+	pdfsubject={\thesisSubject},
+	pdfkeywords={\thesisKeywords}
+}
+
+% Settings
+% ====================
+\input{settings/theoremsetup}
+\input{settings/macrosetup}
+\input{settings/layoutsetup}
+\counterwithout{section}{chapter}
+
+
+
+
+\begin{document}
+
+\frontmatter  % Roman page numbering
+ 
+% Front page
+% ====================
+\input{front}
+
+% Introduction
+% ====================
+\input{introduction/abstract}
+\includepdf[pages={1}]{introduction/Aufgabenstellung.pdf}
+\input{introduction/management-summary}
+\input{introduction/acknowledgements}
+
+% Table of contents
+% ====================
+\cleartorecto
+\begin{KeepFromToc}
+	\renewcommand{\contentsname}{Inhaltsverzeichnis}
+	\tableofcontents
+\end{KeepFromToc}
+
+\mainmatter % Arabic page numbering
+
+% Structur on basis of "Strukturierungsbeispiel 1: Kurzbericht plus volle SW‐ Entwicklungsdokumente"
+\renewcommand{\partname}{Teil}
+\setcounter{figure}{0}
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\tablename}{Tabelle}
+\renewcommand{\thetable}{\arabic{table}}
+\renewcommand{\algorithmcfname}{Algorithmus}
+\SetAlCapSty{}
+
+
+\part{Analyse\label{chapter:analysis}}
+\input{part-1-analysis/introduction.tex}
+\input{part-1-analysis/background.tex}
+\input{part-1-analysis/related-work.tex}
+\input{part-1-analysis/general-phone-analysis.tex}
+\input{part-1-analysis/ios-analysis.tex}
+\input{part-1-analysis/android-analysis.tex}
+
+\part{Versuche
+\label{chapter:experiments}}
+\input{part-2-experiments/experimental-setup.tex}
+\input{part-2-experiments/experiment-one.tex}
+\input{part-2-experiments/experiment-two.tex}
+\input{part-2-experiments/conclusions.tex}
+
+\part{Prototyp}
+\input{part-3-prototype/description.tex}
+\input{part-3-prototype/software-development.tex}
+\input{part-3-prototype/verification.tex}
+
+\part{Abschluss}
+\input{part-4-finish/future-work.tex}
+\input{part-4-finish/final-verdict.tex}
+
+% Project documentation
+% ====================
+\part{Projektmanagement}
+\input{projectmanagement/project-management.tex}
+ 
+\part*{Anhang}
+\addcontentsline{toc}{part}{Anhang}
+\appendix
+\frontmatter
+
+% Glossary
+% ====================
+\input{appendix/glossary.tex}
+
+
+% Bibliography
+% ====================
+\input{appendix/sources.tex}
+
+% List of figures
+% ====================
+\cleardoublepage
+\renewcommand{\listfigurename}{Anhang C: Abbildungsverzeichnis}
+\listoffigures
+
+% List of tables
+% ====================
+\cleardoublepage
+\renewcommand{\listtablename}{Anhang D: Tabellenverzeichnis}
+\listoftables
+
+\input{appendix/experimental-data.tex}
+\input{appendix/device_behaviour.tex}
+\input{appendix/risk-table.tex}
+\input{appendix/meetings.tex}
+\input{appendix/time-report.tex}
+\input{appendix/declarations.tex}
+\input{appendix/personal-reports.tex}
+\backmatter
+
+\end{document}

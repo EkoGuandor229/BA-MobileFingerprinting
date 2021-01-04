@@ -1,0 +1,438 @@
+\section{Verwandte Arbeiten}
+Es gibt duzende Papers zum Thema Fingerprinting auf Mobilgeräten.
+Die relevantesten vier Arbeiten wurden in den folgenden Unterabschnitten
+in der Reihenfolge ihrer Publikation zusammengefasst.
+
+Es gilt zu erwähnen, dass in diesem Abschnitt Informationen aus den Papers
+direkt übersetzt und übernommen wurde. 
+
+\subsection{How Talkative is Your Mobile Device?}
+\begin{itemize}
+    \item Name: How Talkative is your Mobile Device? An Experimental Study of Wi-Fi 
+    Probe-Requests
+    \item Autoren: Julien Freudinger
+    \item Publikationsjahr: 2015
+\end{itemize}
+Das Paper beschäftigt sich mit der Frage, welche Informationen von einem
+Mobilgerät über Probe-Requests versendet werden.
+Die wichtigsten Erkenntnisse sind eine Evaluation für den experimentellen
+Versuchsaufbau, um Probe-Requests zu sniffen, die Messresultate aus den 
+durchgeführten Messungen und eine Evaluation eines kommerziell genutzten 
+MAC-Address-\\ Randomization-Algorithmus.
+
+\subsubsection*{Experimenteller Versuchsaufbau und Resultate}
+Die Experimente, welche im Paper beschrieben werden, 
+beschreiben acht unterschiedliche Konfigurationen für die Messeinrichtung und
+weitere acht für die Mobilgeräte und die aus den Messungen gewonnenen Resultate.
+Für die Messungen wurden ein Samsung S3 mit Android 4.4.2, 
+ein iPhone 6 mit IOS 8.1.3 und ein Nexus 5 mit Android L 5.0.1 verwendet.
+
+\clearpage 
+
+Die Konfigurationen für die Messeinrichtung sind nachfolgend aufgelistet.
+Die Kanäle 1, 6 und 11 werden nachfolgend als reservierte Kanäle bezeichnet.
+\begin{itemize}
+    \item 1.dynamic: Eine Antenne, welche über die drei reservierten 2.4-GHz-Kanäle misst.
+    \item 1.static: Drei Mess-Konfigurationen, jeweils statisch auf einem separaten reservierten 
+    2.4-GHz-Kanal.
+    \item 3.dynamic: Drei Antennen, die koordiniert über die reservierten 2.4-GHz-Kanäle 
+    messen. (Die Antennen springen in regelmässigen Abständen auf den nächsten Kanal und 
+    sind jeweils um einen Kanal verschoben)
+    \item 3.dynamic.s: Drei Antennen, die über die reservierten 2.4-GHz-Kanäle messen.
+    (Jede Antenne springt frei über die reservierten Kanäle.)
+    \item 3.dynamic.sn: Drei Antennen die über die reservierten 2.4-GHz-Kanäle und die 
+    in der Tabelle~\ref{table:higherfrequencyband} erwähnten 5-GHz-Kanäle messen.
+    \item 3.static: Pro reserviertem Kanal wird jeweils eine Antenne statisch eingestellt.
+\end{itemize}
+
+Die Messungen wurden jeweils eine Stunde lang durchgeführt und fünfmal 
+wiederholt.
+Als Ergebnisse wurden die durchschnittlich aufgezeichnete Anzahl der Probe-
+Requests und eine Schätzung der nicht aufgezeichneten Requests gespeichert.
+Die nicht aufgezeichneten Probe-Requests können aus den Sequenznummern 
+abgeschätzt werden. Werden in einer Messung beispielsweise drei Probe-Requests mit den
+Sequenznummern 1, 3 und 5 aufgezeichnet, kann davon ausgegangen werden,
+dass zwei Probes mit den Sequenznummern 2 und 4 nicht aufgezeichnet wurden.
+
+Die Verwendung von mehreren Antennen ist ein Ansatz, welcher in anderen Arbeiten
+z.T. nicht beachtet wurde und dazu führen kann, dass nur ca. $57$ Prozent der Probe
+Requests tatsächlich gemessen und in den Ergebnissen berücksichtigt wurden.
+
+\clearpage
+
+Die Konfiguration der Mobilgeräte ist nachfolgend aufgelistet:
+\begin{itemize}
+    \item Default: Das Mobilgerät ist gesperrt, an ein Ladekabel angeschlossen,
+    nicht mit einem WLAN verbunden und Bluetooth ist ausgeschaltet. Das Gerät
+    kennt vier Netzwerke.
+    \item Not Charging: Das Mobilgerät ist nicht an ein Ladekabel angeschlossen.
+    \item Screen ON: Das Gerät wird alle fünf Minuten entsperrt und wieder gesperrt.
+    \item Wi-Fi Connected: Das Gerät ist mit einem WLAN verbunden.
+    \item Wi-Fi Settings ON: Das Mobilgerät befindet sich im Menu für die Auswahl 
+    des WLANs, es wird aber sonst nicht mit dem Gerät interagiert.
+    \item Bluetooth ON: Bluetooth ist während den Messungen eingeschaltet.
+    \item Airplane ON: Der Flugmodus ist während den Messungen eingestellt und
+    das WLAN auf dem Mobilgerät eingeschaltet.
+    \item Known In Proximity: Ein dem Gerät bekanntes WLAN erscheint alle fünf
+    Minuten für 10 Sekunden im Empfangsbereich des Mobilgeräts.
+\end{itemize}
+Die Resultate zeigen, dass wenn die WLAN-Einstellungen eingeschaltet werden 
+oder wenn der Bildschirm aktiviert wird, die Anzahl ausgesendeter
+Probe-Requests ansteigt. 
+Eine Ausnahme ist hierbei das Nexus 5, welches keinen signifikanten Unterschied
+bei den ausgesendeten Probes aufweist.
+
+Weiterhin wurde gemessen, welche Auswirkung die Anzahl bekannter Netzwerke 
+auf einem Mobilgerät auf die Anzahl ausgesendeter Probe-Requests hat.
+Das iPhone sendet erst ab 20 bekannten SSIDs eine erhöhte Anzahl von Probes aus.
+Auf dem Nexus werden unabhängig von den bekannten Netzwerken immer etwa gleich
+viel Probe-Requests ausgesandt.
+Lediglich das Samsung S3 versendet mit steigender Anzahl bekannter Netzwerke
+eine erhöhte Anzahl Probes.
+
+Im Paper wird jeweils davon ausgegangen, dass diese aufgezeichneten 
+Geräte-verhalten vom Betriebssystem abhängen. 
+Es wurden keine Messungen mit unterschiedlichen Geräten mit demselben
+Betriebssystem vorgenommen, um den Einfluss von Hardware auf das Probing-
+Verhalten zu untersuchen.
+
+\clearpage
+
+\subsubsection*{MAC-Address-Randomization-Algorithmus}
+In den durchgeführten Messungen werden verschleierte MAC-Adressen des iPhones
+untersucht und festgestellt, dass die Sequenznummern im iOS 8 nicht zufällig
+initialisiert werden, sondern aufsteigend vorkommen.
+Ausserdem wird in iOS 8 die MAC-Adresse nur dann verschleiert, wenn das Gerät 
+im Ruhemodus ist. 
+Das bedeutet, dass iPhones mit iOS 8 relativ einfach identifiziert werden können,
+wenn man die nicht randomisierte MAC-Adresse aufzeichnet und die 
+Sequenznummern mit denjenigen Probe-Requests vergleicht, die eine verschleierte
+MAC-Adresse haben. Hat man beispielsweise in Wireshark einen Probe mit der 
+MAC `Apple\_12:84:05' und der Sequenznummer `1337' und einen Probe-Request 
+mit der MAC `52:61:6E:64:6F:6D' und der Sequenznummer `1340', kann man davon 
+ausgehen, dass die beiden Probe-Requests vom selben Gerät ausgesendet wurden.
+
+Weiterhin senden Mobilgeräte mit iOS 8 oder Android 4 und 5 in den Information-
+Element-Feldern herstellerspezifische Informationen mit, welche es zusätzlich
+vereinfachen, Probe-Requests mit verschleierten MAC-Adressen zu einem spezifischen
+Gerät zuzuordnen.
+
+\clearpage
+
+\subsection{Defeating MAC Address Randomization Through Timing Attacks}
+\begin{itemize}
+    \item Name: Defeating MAC Address Randomization Through Timing Attacks
+    \item Autoren: Célestin Matte et al.
+    \item Publikationsjahr: 2016
+\end{itemize}
+In diesem Paper wird ein Verfahren erarbeitet, mit dem die Verschleierung
+von MAC-Adressen mittels eines Timing-Angriffs neutralisiert wird.
+Es wird davon ausgegangen, dass die verschiedenen Betriebssysteme dahingehend
+angepasst wurden, dass die Mobilgeräte keine identifizierenden Informationen 
+mehr aussenden und nur das Timing der Probe-Requests für ein möchliches 
+Fingerprinting verwendet werden kann.
+Dabei wird vorausgesetzt, dass die Frames, die von Geräten ausgesendet
+werden, einem Muster folgen, welches sich für eine Identifikation nutzen lässt.
+
+MAC-Adressen werden in vielen Implementationen nach einigen Probe-Requests 
+neu randomisiert. 
+Eine Gruppe von Probe-Requests, die in einem Zeitfenster von ungefähr zehn
+Millisekunden ausgesandt werden, wird auch Burst genannt.
+Ausserdem ist in der Praxis die tatsächliche Anzahl Mobilgeräte im Empfangsbereich
+eines WLAN-Access-Points nicht bekannt.
+Die Schwierigkeit eines solchen Ansatzes besteht darin, mit einer sehr geringen Menge 
+von Informationen ein zuverlässiges Fingerprinting durchführen zu können, 
+ohne dass zuvor eine Datensammlung möglich gewesen ist. 
+Die Autoren beschreiben als Lösung für diese Problematik die Verwendung 
+inkrementeller Lernmethoden für die Clusterbildung unter der Verwendung
+einer handelsüblicher Netzwerkkarte, die nur einen Kanal gleichzeitig \\
+überwachen kann.
+
+\subsubsection*{Zeitbasierte Signatur}
+Probe-Requests lassen sich gruppieren, indem die Inter-Frame-Arrival-Time
+(Zwischenankunftszeit, nachfolgend IFAT genannt) der einzelnen Frames mit 
+der selben MAC-Adresse analysiert wird.
+Der Algorithmus~\ref{algorithm:timeattack} beschreibt in Pseudocode, 
+wie ein Identifikator zu einem Frame hinzugefügt werden kann.
+
+\clearpage
+
+\begin{algorithm}
+    \KwIn{
+        \\
+        $G$: groups of burdst sets, grouped by MAC
+        \\
+        $t$: distance threshold 
+        \\
+        $d$: a distance function
+    }
+    \KwResult{$A$: dictionary of aliases}
+    \BlankLine
+    $A \longleftarrow \emptyset $\;
+    $D \longleftarrow \emptyset $\tcp*[r]{Database of signatures}
+    \ForEach{$B \in G$}{
+        $S \longleftarrow $signature($B$)\;
+        $d_{\text{min}} \longleftarrow min(d(S,S')\, \text{where}\, S' \in D)$\;
+        \If{$d_{\text{min}} < t$}{
+            $A[B.mac] \longleftarrow A[S'.mac]$\;
+        }\Else{
+            $A[B.mac] \longleftarrow B.mac$\;
+        }
+        $D \longleftarrow D \cup S$
+    }
+    \Return{$A$}
+    \caption{Algorithmus für die identifikation von MAC-Frames
+    \label{algorithm:timeattack}}
+\end{algorithm}
+
+Der Algorithmus hat als Input ein beliebiges Capture-File mit gemessenen
+Probe-Requests und liefert als Output ein Mapping von Identifikatoren und
+den Frames. 
+Für alle Frames mit der selben MAC-Adresse wird die IFAT, 
+die Auftretenswahrscheinlichkeit und der Durchschnitt der IFAT berechnet.
+Anhand dieser Berechnungen wird basierend auf der eingegebenen Distanzgrenze
+(distance threshold) entschieden, ob zwei Signaturen zum selben Gerät gehören.
+
+Im Paper werden drei Distanzmass-Algorithmen genannt, 
+auf die hier nicht weiter eingegangen wird. 
+Bei Interesse des Lesers empfiehlt sich das Studium des Papers.
+Weiterhin wird der Algorithmus an einem Datenset von 120'000 Proberequests
+validiert und hat eine Erfolgsquote von ungefähr $77,2$ Prozent.
+
+\clearpage 
+
+\subsection{Why MAC Address Randomization is not Enough}
+\begin{itemize}
+    \item Name: Why MAC Address Randomization is not Enough: 
+    An Analysis of Wi-Fi Network Discovery Mechanisms
+    \item Autoren: Mathy Vanhoef et al.
+    \item Publikationsjahr: 2016
+\end{itemize}
+
+In der Recherche zum Thema Mobile Fingerprinting taucht dieses Paper in 
+sehr vielen anderen Quellen als Referenz auf. 
+Darin wird eine fundierte Analyse diverser Methoden für die Deanonymisierung
+von Mobilgeräten vorgenommen und erwiesen, dass die Verschleierung von 
+MAC-Adressen allein keine Garantie für die Privatsphäre der Nutzer ist.
+
+Der Hauptansatz besteht in der Analyse von Information-Element-Feldern
+und den Sequenznummern, um Mobilgeräte voneinander zu unterscheiden.
+Insgesamt werden zwölf IE-Felder genannt, die für ein Fingerprinting 
+relevant sein können und nachfolgend aufgelistet sind.
+\begin{itemize}
+    \item HT capabilities info 
+    \item Ordered list of tags numbers 
+    \item Extended capabilities
+    \item HT A-MPDU parameters 
+    \item HT MCS set bitmask
+    \item Supported rates 
+    \item Interworking access net. type
+    \item Extended supported rates 
+    \item WPS UUID 
+    \item HT extended capabilities
+    \item HT TxBeam Forming Cap. 
+    \item HT Antenna Selection Cap.
+\end{itemize}
+Weiterhin könnte die Reihenfolge der IE-Tags eine weitere Informationsquelle 
+für ein mögliches Fingerprinting sein.
+
+\clearpage
+
+Auch in diesem Paper wird ein Algorithmus beschrieben, 
+welcher ein Fingerprinting auf Mobilgeräte ermöglicht.
+
+\begin{algorithm}
+    \KwIn{
+        \\
+        $P$: List of captured probe requests
+        \\
+        $\Delta T$: maximum time between two probes 
+        \\
+        $\Delta S$: maximum sequence number distance 
+    }
+    \KwResult{Set of clusters corresponding to devices}
+    \BlankLine
+    $M \longleftarrow \emptyset$\tcp*[r]{$M$ maps fingerprints to clusters}
+    \ForAll{$p \in P$}{
+        $f \longleftarrow \text{fingerprint}(p) $\tcp*[r]{Calculate IE fingerprint}
+        $M[f].\text{append}(p) $\tcp*[r]{Append probe to cluster}
+    }
+    $ D \longleftarrow []$\tcp*[r]{List of clusters representing devices}
+    \ForAll{$C \in M$}{
+        $S \longleftarrow [] $\tcp*[r]{Will contain subdivision of C}
+        $m \longleftarrow \text{max}(p.seq\, \mathbf{for}\, p\, \mathbf{in}\, C) $\;
+        \ForAll{$p \in C$}{
+            $\text{Find}\, i\, \text{such that:} $\tcp*[f]{Fing matching cluster}\\
+            $\qquad \text{d}(S[i].last.seq,\, p.seq,\, m) \leq \Delta S$\;
+            $\qquad \text{and}\, p.time - S[i].last.time \leq \Delta T$\; 
+            \If{$no\, i\, found$}{
+            $i \longleftarrow |S|$\tcp*[r]{Create new subcluster}
+        }
+        $S[i].append(p)$\tcp*[r]{Add p to subcluster}
+        }
+        $D.extend(S)$\tcp*[r]{Extend list D with S}
+    }
+    \Return{$D$}
+    \caption{Gruppierungsalgorithmus basierend auf IE-Feldern
+    \label{algorithm:ieattack}}
+\end{algorithm}
+    
+Der Algorithmus berechnet zuerst für alle Probe-Requests einen Fingerprint
+anhand der IE-Felder und weist diesen einem Cluster zu. 
+Die Cluster werden basierend auf den Sequenznummern in Gruppen unterteilt.
+
+Da in modernen Betriebssystemen die Sequenznummer auch zufällig gesetzt wird,
+kann das Clustering nicht mehr anhand der Sequenznummer durchgeführt werden.
+In einem eigenen Prototypen müsste für die Clusterbildung eine eigene
+Methodik entworfen werden.
+
+\clearpage
+
+\subsection{Noncooperative 802.11 MAC Layer Fingerprinting}
+\begin{itemize}
+    \item Name: Noncooperative 802.11 MAC Layer Fingerprinting and Tracking
+    of Mobile Devices
+    \item Autoren: Pieter Robyns et al.
+    \item Publikationsjahr: 2017
+\end{itemize}
+
+In diesem Paper wird eine pro-Bit-Entropie Analyse von Probe-Request-Frames
+durchgeführt und eine Technik vorgestellt, die mittels eines Fingerprints 
+und zeitlichen Daten ein Gerät mit bis zu $80$ Prozent Genauigkeit erkennen und 
+verfolgen kann, ohne dass dafür spezielle Hardware benötigt wird.
+
+\subsubsection*{Identifikatoren und Fingerprinting}
+Es wird zwischen zwei Typen von Identifikatoren unterschieden.
+Explizite Identifikatoren, zu denen eine MAC-Adresse gehört, erlauben es,
+ein Gerät eindeutig zu identifizieren.
+Implizite Identifikatoren sind Informationen, die nicht absichtlich für 
+die Identifikation gedacht sind, aber sich von Gerät zu Gerät genügend 
+unterscheiden, um damit ein Fingerprinting durchzu-führen.
+Unter der Annahme, dass die MAC-Adresse in Mobilgeräten anonymi-siert wird,
+müssen für ein Fingerprinting die impliziten Identifikatoren verwendet werden.
+
+\subsubsection*{Bitweise MAC-Header-Analyse}
+In weiteren Arbeiten wird oftmals ein spezifisches Element des MAC-Headers
+für ein Fingerprinting verwendet und das restliche Frame verworfen.
+Dieses Paper schlägt vor, anhand der Entropie der einzelnen Header-Felder
+automatisch zu evaluieren, welche Informationen für ein Fingerprinting 
+verwendet werden sollen.
+Dabei wird davon ausgegangen, dass das Mobilgerät jedes Frame einzeln
+anonymisiert und nicht mit einem Access Point assoziiert ist. 
+Das bedeutet, die vorgeschlagene Technik ist für die Anwendung auf 
+ein einzelnes Frame ausgelegt.
+
+Im Paper werden drei wichtige Metriken vorgestellt:
+\begin{itemize}
+    \item Bit-Variabilität: Einzelne Bits unterscheiden sich von Gerät zu
+    Gerät dahingehend, dass sie sich für ein Fingerprinting eignen.
+    \item Bit-Stabilität: Für ein Gerät bleiben die Bits, 
+    die sich zu anderen Geräten unterscheiden, in nacheinander auftretenden
+    Frames soweit stabil, dass sie weiterhin für einen Fingerprint 
+    verwendet werden können.
+    \item Bit-Verwendbarkeit: Die Verwendbarkeit ist eine Kombination der
+    Variabilität und der Stabilität und sagt aus, ob das Bit für ein 
+    Fingerprinting tatsächlich verwendet wird.
+\end{itemize}
+
+\clearpage
+
+\subsubsection*{Berechnung der Variabilität}
+Die Variabilität ist die Entropie eines Bits gemessen über mehrere Frames
+welche jeweils von einem anderen Mobilgerät ausgesendet werden.
+Dabei wird pro Gerät nur ein einzelnes Frame in Betracht gezogen, 
+um keinen Bias in das System einzufügen.
+
+Um die Entropie eines Bits an der Position $i$ in einem Frame zu berechnen,
+wird zuerst die diskrete Wahrscheinlichkeitsdichte ($P(X_{i})$) für 
+jeden Bitwert an der Position $i$ berechnet.
+$X_{i}$ ist dabei die Zufallsvariable, welche einen Bitwert repräsentiert.
+Somit ist $X_{i} \in \{0, 1, U\}$, wobei $U$ bedeutet, dass das Bit nicht 
+vorhanden ist.
+Die Wahrscheinlichkeitsdichte kann dann verwendet werden, um die 
+Shannon-Entropie zu berechnen, wie in der 
+Formel~\ref{equation:shannonentropy} dargestellt.
+
+\begin{equation}
+    \label{equation:shannonentropy}
+    H(X_{i}) = - \sum_{x \in \{0, 1, U\}} P(X_{ix}) \log_{3} P(X_{ix})
+\end{equation}
+
+Da für die Berechnung der Entropie ein Bit mit drei möglichen Zuständen
+(Wert 1 oder 0 und nicht vorhanden) beschrieben wird, wird der $\log_{3}$
+anstatt dem üblichen $\log_{2}$ verwendet.
+$H(X_{i})$ hat nun einen Wert zwischen $0$ und $1$, wobei $0$ bedeutet, 
+dass keine Entropie vorhanden ist und $1$ bedeutet, dass eine maximale 
+Entropie vorhanden ist.
+Das Resultat kann als Vektor $\vec{v}$ repräsentiert werden:
+
+\begin{equation}
+    \vec{v} = [H_{1}\; H_{2}\; \cdots H_{n-1}\; H_{n}]
+\end{equation}
+
+Hierbei ist $n$ die Anzahl der Bits im Frame und $H_{n}$ die Entropie des 
+jeweiligen Bits ist.
+
+\subsubsection*{Berechnung der Stabilität}
+Die Stabilität eines Bits wird als $1$ minus die Entropie dieses Bits, 
+gemessen über mehrere Frames von einem Gerät, definiert.
+Der Wert sagt aus, wie hoch die Wahrscheinlichkeit ist, dass das 
+Bit über mehrere Übertragungen gleich bleibt.
+Der Nutzen der Stabilität ist, dass diejenigen Bits, die sich pro Gerät
+häufig verändern, im Fingerprinting nicht berücksichtigt werden.
+Die Formel~\ref{equation:stability} zeigt den Resultierenden 
+Stabilitätsvektor $\vec{s_{d}}$ pro Mobilgerät $d$:
+
+\begin{equation}
+    \label{equation:stability}
+    \vec{s_{d}} = [1-H_{d1}\; 1-H_{d2}\; \cdots 1-H_{dn-1}\; 1-H_{dn}]
+\end{equation}
+
+\clearpage
+
+Im Gegensatz zur Variabilität bedeutet ein hoher Wert bei der Entropie,
+dass die Stabilität geringer wird. 
+Darum wird die Stabilität mit $1-H(X_{i})$ berechnet.
+Da die Stabilität pro Gerät berechnet wird, muss der Vektor $\vec{s}$
+durch eine Mittelwertsberechnung der Werte des Vektors $\vec{s_{d}}$
+berechnet werden, um diesen für die weiteren Operationen verwenden zu können.
+
+\subsubsection*{Berechnung der Verwendbarkeit}
+Im Idealfall sind Variabilität und Stabilität beide genügend hoch, 
+um damit ein Fingerprinting durchführen zu können. 
+Um die Verwendbarkeit - darge-stellt durch den Vektor $\vec{u}$ - zu berechnen,
+werden im Paper zwei Ansätze vorgestellt, die beide in der Praxis anwendbar
+sind. 
+
+Der erste Ansatz ist ein statistisches Vorgehen, welches die Variabilität
+und Stabilität als Wahrscheinlichkeit betrachtet, da beide im Wertebereich
+$[0, 1]$ sind. Davon ausgehend, dass $\vec{v} \text{ und } \vec{s}$ 
+voneinander unabhängige Variablen sind, kann die Verwendbarkeit mit der
+Formel
+\begin{equation}
+    \vec{u} = \vec{v} \odot \vec{s}
+\end{equation}
+berechnet werden.
+
+Der zweite Ansatz geht davon aus, dass die Stabilität zu bevorzugen ist
+und deshalb in der Berechnung nur die Variabilität verwendet wird.
+Diejenigen Bits, deren Stabilität unter einem gewissen Schwellwert $\lambda$ 
+liegen, werden aus der Berechnung ausgeschlossen.
+
+\begin{equation}
+    \vec{u_{i}} = 
+    \begin{cases}
+        \vec{v_{i}},\quad \text{if}\; \vec{s_{i}} \geq \lambda, \\
+        0,\quad \text{otherwise}
+    \end{cases}
+\end{equation}
+
+Falls beispielsweise der Schwellwert $\lambda = 1$ gesetzt wird, 
+wird dadurch sichergestellt, dass kombinierte Bits im Fingerprint über die 
+Zeit immer stabil bleiben.
+
+Da die IE-Felder nicht unbedingt in allen Probe-Requests in der gleichen 
+Reihenfolge vorkommen, müssen die Variabilität und Stabilität für 
+die IE-Felder unabhängig ihrer Reihenfolge berechnet werden.
+
+\clearpage

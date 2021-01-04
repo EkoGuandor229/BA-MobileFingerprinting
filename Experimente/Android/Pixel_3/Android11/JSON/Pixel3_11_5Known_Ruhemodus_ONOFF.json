@@ -1,0 +1,2190 @@
+[
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:16:23.535053000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517692583.535053000",
+          "frame.time_delta": "0.000000000",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "0.000000000",
+          "frame.number": "1",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "18063736",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-33",
+          "radiotap.dbm_antnoise": "-74",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-33",
+          "wlan_radio.noise_dbm": "-74",
+          "wlan_radio.snr": "41",
+          "wlan_radio.timestamp": "18063736",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.start_tsf": "18063080",
+            "wlan_radio.end_tsf": "18063736"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "72:1d:28:59:87:13",
+          "wlan.ta_resolved": "72:1d:28:59:87:13",
+          "wlan.sa": "72:1d:28:59:87:13",
+          "wlan.sa_resolved": "72:1d:28:59:87:13",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "72:1d:28:59:87:13",
+          "wlan.addr_resolved": "72:1d:28:59:87:13",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "927",
+          "wlan.fcs": "0x894ad43d",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:16:43.560830000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517692603.560830000",
+          "frame.time_delta": "20.025777000",
+          "frame.time_delta_displayed": "20.025777000",
+          "frame.time_relative": "20.025777000",
+          "frame.number": "2",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "38088310",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-32",
+          "radiotap.dbm_antnoise": "-75",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-32",
+          "wlan_radio.noise_dbm": "-75",
+          "wlan_radio.snr": "43",
+          "wlan_radio.timestamp": "38088310",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "20023918",
+            "wlan_radio.start_tsf": "38087654",
+            "wlan_radio.end_tsf": "38088310"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "46:94:06:42:02:11",
+          "wlan.ta_resolved": "46:94:06:42:02:11",
+          "wlan.sa": "46:94:06:42:02:11",
+          "wlan.sa_resolved": "46:94:06:42:02:11",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "46:94:06:42:02:11",
+          "wlan.addr_resolved": "46:94:06:42:02:11",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "154",
+          "wlan.fcs": "0x8b8c487f",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:17:43.588591000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517692663.588591000",
+          "frame.time_delta": "60.027761000",
+          "frame.time_delta_displayed": "60.027761000",
+          "frame.time_relative": "80.053538000",
+          "frame.number": "3",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "98112857",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-35",
+          "radiotap.dbm_antnoise": "-74",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-35",
+          "wlan_radio.noise_dbm": "-74",
+          "wlan_radio.snr": "39",
+          "wlan_radio.timestamp": "98112857",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "60023891",
+            "wlan_radio.start_tsf": "98112201",
+            "wlan_radio.end_tsf": "98112857"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "c2:01:fc:a7:71:fb",
+          "wlan.ta_resolved": "c2:01:fc:a7:71:fb",
+          "wlan.sa": "c2:01:fc:a7:71:fb",
+          "wlan.sa_resolved": "c2:01:fc:a7:71:fb",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "c2:01:fc:a7:71:fb",
+          "wlan.addr_resolved": "c2:01:fc:a7:71:fb",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "1531",
+          "wlan.fcs": "0x9eb56a68",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:18:43.620169000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517692723.620169000",
+          "frame.time_delta": "60.031578000",
+          "frame.time_delta_displayed": "60.031578000",
+          "frame.time_relative": "140.085116000",
+          "frame.number": "4",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "158141200",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-38",
+          "radiotap.dbm_antnoise": "-74",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-38",
+          "wlan_radio.noise_dbm": "-74",
+          "wlan_radio.snr": "36",
+          "wlan_radio.timestamp": "158141200",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "60027687",
+            "wlan_radio.start_tsf": "158140544",
+            "wlan_radio.end_tsf": "158141200"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "de:e7:c2:8a:ac:f3",
+          "wlan.ta_resolved": "de:e7:c2:8a:ac:f3",
+          "wlan.sa": "de:e7:c2:8a:ac:f3",
+          "wlan.sa_resolved": "de:e7:c2:8a:ac:f3",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "de:e7:c2:8a:ac:f3",
+          "wlan.addr_resolved": "de:e7:c2:8a:ac:f3",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "18",
+          "wlan.fcs": "0x0a1112b1",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:19:43.651279000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517692783.651279000",
+          "frame.time_delta": "60.031110000",
+          "frame.time_delta_displayed": "60.031110000",
+          "frame.time_relative": "200.116226000",
+          "frame.number": "5",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "218169084",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-33",
+          "radiotap.dbm_antnoise": "-74",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-33",
+          "wlan_radio.noise_dbm": "-74",
+          "wlan_radio.snr": "41",
+          "wlan_radio.timestamp": "218169084",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "60027228",
+            "wlan_radio.start_tsf": "218168428",
+            "wlan_radio.end_tsf": "218169084"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "e6:04:8e:44:97:86",
+          "wlan.ta_resolved": "e6:04:8e:44:97:86",
+          "wlan.sa": "e6:04:8e:44:97:86",
+          "wlan.sa_resolved": "e6:04:8e:44:97:86",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "e6:04:8e:44:97:86",
+          "wlan.addr_resolved": "e6:04:8e:44:97:86",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "495",
+          "wlan.fcs": "0xdf357227",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:20:43.682467000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517692843.682467000",
+          "frame.time_delta": "60.031188000",
+          "frame.time_delta_displayed": "60.031188000",
+          "frame.time_relative": "260.147414000",
+          "frame.number": "6",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "278197055",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-35",
+          "radiotap.dbm_antnoise": "-74",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-35",
+          "wlan_radio.noise_dbm": "-74",
+          "wlan_radio.snr": "39",
+          "wlan_radio.timestamp": "278197055",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "60027315",
+            "wlan_radio.start_tsf": "278196399",
+            "wlan_radio.end_tsf": "278197055"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "a6:4a:70:41:3c:30",
+          "wlan.ta_resolved": "a6:4a:70:41:3c:30",
+          "wlan.sa": "a6:4a:70:41:3c:30",
+          "wlan.sa_resolved": "a6:4a:70:41:3c:30",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "a6:4a:70:41:3c:30",
+          "wlan.addr_resolved": "a6:4a:70:41:3c:30",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "1014",
+          "wlan.fcs": "0xd32ce0ad",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:21:43.713753000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517692903.713753000",
+          "frame.time_delta": "60.031286000",
+          "frame.time_delta_displayed": "60.031286000",
+          "frame.time_relative": "320.178700000",
+          "frame.number": "7",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "338225077",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-36",
+          "radiotap.dbm_antnoise": "-75",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-36",
+          "wlan_radio.noise_dbm": "-75",
+          "wlan_radio.snr": "39",
+          "wlan_radio.timestamp": "338225077",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "60027366",
+            "wlan_radio.start_tsf": "338224421",
+            "wlan_radio.end_tsf": "338225077"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "3e:a8:83:38:6d:de",
+          "wlan.ta_resolved": "3e:a8:83:38:6d:de",
+          "wlan.sa": "3e:a8:83:38:6d:de",
+          "wlan.sa_resolved": "3e:a8:83:38:6d:de",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "3e:a8:83:38:6d:de",
+          "wlan.addr_resolved": "3e:a8:83:38:6d:de",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "729",
+          "wlan.fcs": "0x7137d747",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:22:43.741056000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517692963.741056000",
+          "frame.time_delta": "60.027303000",
+          "frame.time_delta_displayed": "60.027303000",
+          "frame.time_relative": "380.206003000",
+          "frame.number": "8",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "398249191",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-36",
+          "radiotap.dbm_antnoise": "-74",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-36",
+          "wlan_radio.noise_dbm": "-74",
+          "wlan_radio.snr": "38",
+          "wlan_radio.timestamp": "398249191",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "60023458",
+            "wlan_radio.start_tsf": "398248535",
+            "wlan_radio.end_tsf": "398249191"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "aa:7f:00:13:e0:e5",
+          "wlan.ta_resolved": "aa:7f:00:13:e0:e5",
+          "wlan.sa": "aa:7f:00:13:e0:e5",
+          "wlan.sa_resolved": "aa:7f:00:13:e0:e5",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "aa:7f:00:13:e0:e5",
+          "wlan.addr_resolved": "aa:7f:00:13:e0:e5",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "1490",
+          "wlan.fcs": "0x498f440f",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:23:43.770152000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517693023.770152000",
+          "frame.time_delta": "60.029096000",
+          "frame.time_delta_displayed": "60.029096000",
+          "frame.time_relative": "440.235099000",
+          "frame.number": "9",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "458275066",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-35",
+          "radiotap.dbm_antnoise": "-74",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-35",
+          "wlan_radio.noise_dbm": "-74",
+          "wlan_radio.snr": "39",
+          "wlan_radio.timestamp": "458275066",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "60025219",
+            "wlan_radio.start_tsf": "458274410",
+            "wlan_radio.end_tsf": "458275066"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "32:58:42:09:01:e9",
+          "wlan.ta_resolved": "32:58:42:09:01:e9",
+          "wlan.sa": "32:58:42:09:01:e9",
+          "wlan.sa_resolved": "32:58:42:09:01:e9",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "32:58:42:09:01:e9",
+          "wlan.addr_resolved": "32:58:42:09:01:e9",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "1116",
+          "wlan.fcs": "0x1c715be3",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:24:43.800999000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517693083.800999000",
+          "frame.time_delta": "60.030847000",
+          "frame.time_delta_displayed": "60.030847000",
+          "frame.time_relative": "500.265946000",
+          "frame.number": "10",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "518302698",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-34",
+          "radiotap.dbm_antnoise": "-74",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-34",
+          "wlan_radio.noise_dbm": "-74",
+          "wlan_radio.snr": "40",
+          "wlan_radio.timestamp": "518302698",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "60026976",
+            "wlan_radio.start_tsf": "518302042",
+            "wlan_radio.end_tsf": "518302698"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "c2:d1:9a:a3:04:8f",
+          "wlan.ta_resolved": "c2:d1:9a:a3:04:8f",
+          "wlan.sa": "c2:d1:9a:a3:04:8f",
+          "wlan.sa_resolved": "c2:d1:9a:a3:04:8f",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "c2:d1:9a:a3:04:8f",
+          "wlan.addr_resolved": "c2:d1:9a:a3:04:8f",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "41",
+          "wlan.fcs": "0x939ccf8d",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2018-02-03",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en0"
+          },
+          "frame.encap_type": "23",
+          "frame.time": "Feb  3, 2018 22:25:43.830173000 W. Europe Standard Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1517693143.830173000",
+          "frame.time_delta": "60.029174000",
+          "frame.time_delta_displayed": "60.029174000",
+          "frame.time_relative": "560.295120000",
+          "frame.number": "11",
+          "frame.len": "83",
+          "frame.cap_len": "83",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "radiotap:wlan_radio:wlan"
+        },
+        "radiotap": {
+          "radiotap.version": "0",
+          "radiotap.pad": "0",
+          "radiotap.length": "25",
+          "radiotap.present": {
+            "radiotap.present.word": "0x0000086f",
+            "radiotap.present.word_tree": {
+              "radiotap.present.tsft": "1",
+              "radiotap.present.flags": "1",
+              "radiotap.present.rate": "1",
+              "radiotap.present.channel": "1",
+              "radiotap.present.fhss": "0",
+              "radiotap.present.dbm_antsignal": "1",
+              "radiotap.present.dbm_antnoise": "1",
+              "radiotap.present.lock_quality": "0",
+              "radiotap.present.tx_attenuation": "0",
+              "radiotap.present.db_tx_attenuation": "0",
+              "radiotap.present.dbm_tx_power": "0",
+              "radiotap.present.antenna": "1",
+              "radiotap.present.db_antsignal": "0",
+              "radiotap.present.db_antnoise": "0",
+              "radiotap.present.rxflags": "0",
+              "radiotap.present.xchannel": "0",
+              "radiotap.present.mcs": "0",
+              "radiotap.present.ampdu": "0",
+              "radiotap.present.vht": "0",
+              "radiotap.present.timestamp": "0",
+              "radiotap.present.he": "0",
+              "radiotap.present.he_mu": "0",
+              "radiotap.present.0_length.psdu": "0",
+              "radiotap.present.l_sig": "0",
+              "radiotap.present.reserved": "0x00000000",
+              "radiotap.present.rtap_ns": "0",
+              "radiotap.present.vendor_ns": "0",
+              "radiotap.present.ext": "0"
+            }
+          },
+          "radiotap.mactime": "578328674",
+          "radiotap.flags": "0x00000010",
+          "radiotap.flags_tree": {
+            "radiotap.flags.cfp": "0",
+            "radiotap.flags.preamble": "0",
+            "radiotap.flags.wep": "0",
+            "radiotap.flags.frag": "0",
+            "radiotap.flags.fcs": "1",
+            "radiotap.flags.datapad": "0",
+            "radiotap.flags.badfcs": "0",
+            "radiotap.flags.shortgi": "0"
+          },
+          "radiotap.datarate": "1",
+          "radiotap.channel.freq": "2412",
+          "radiotap.channel.flags": "0x00000480",
+          "radiotap.channel.flags_tree": {
+            "radiotap.channel.flags.turbo": "0",
+            "radiotap.channel.flags.cck": "0",
+            "radiotap.channel.flags.ofdm": "0",
+            "radiotap.channel.flags.2ghz": "1",
+            "radiotap.channel.flags.5ghz": "0",
+            "radiotap.channel.flags.passive": "0",
+            "radiotap.channel.flags.dynamic": "1",
+            "radiotap.channel.flags.gfsk": "0",
+            "radiotap.channel.flags.gsm": "0",
+            "radiotap.channel.flags.sturbo": "0",
+            "radiotap.channel.flags.half": "0",
+            "radiotap.channel.flags.quarter": "0"
+          },
+          "radiotap.dbm_antsignal": "-33",
+          "radiotap.dbm_antnoise": "-75",
+          "radiotap.antenna": "0"
+        },
+        "wlan_radio": {
+          "wlan_radio.phy": "6",
+          "wlan_radio.short_preamble": "0",
+          "wlan_radio.11g.mode": "0",
+          "wlan_radio.data_rate": "1",
+          "wlan_radio.channel": "1",
+          "wlan_radio.frequency": "2412",
+          "wlan_radio.signal_dbm": "-33",
+          "wlan_radio.noise_dbm": "-75",
+          "wlan_radio.snr": "42",
+          "wlan_radio.timestamp": "578328674",
+          "wlan_radio.duration": "656",
+          "wlan_radio.duration_tree": {
+            "wlan_radio.preamble": "192",
+            "wlan_radio.ifs": "60025320",
+            "wlan_radio.start_tsf": "578328018",
+            "wlan_radio.end_tsf": "578328674"
+          }
+        },
+        "wlan": {
+          "wlan.fc.type_subtype": "4",
+          "wlan.fc": "0x00004000",
+          "wlan.fc_tree": {
+            "wlan.fc.version": "0",
+            "wlan.fc.type": "0",
+            "wlan.fc.subtype": "4",
+            "wlan.flags": "0x00000000",
+            "wlan.flags_tree": {
+              "wlan.fc.ds": "0x00000000",
+              "wlan.fc.tods": "0",
+              "wlan.fc.fromds": "0",
+              "wlan.fc.frag": "0",
+              "wlan.fc.retry": "0",
+              "wlan.fc.pwrmgt": "0",
+              "wlan.fc.moredata": "0",
+              "wlan.fc.protected": "0",
+              "wlan.fc.order": "0"
+            }
+          },
+          "wlan.duration": "0",
+          "wlan.ra": "ff:ff:ff:ff:ff:ff",
+          "wlan.ra_resolved": "Broadcast",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.da": "ff:ff:ff:ff:ff:ff",
+          "wlan.da_resolved": "Broadcast",
+          "wlan.ta": "12:89:5d:d2:c8:f4",
+          "wlan.ta_resolved": "12:89:5d:d2:c8:f4",
+          "wlan.sa": "12:89:5d:d2:c8:f4",
+          "wlan.sa_resolved": "12:89:5d:d2:c8:f4",
+          "wlan.bssid": "ff:ff:ff:ff:ff:ff",
+          "wlan.bssid_resolved": "Broadcast",
+          "wlan.addr": "12:89:5d:d2:c8:f4",
+          "wlan.addr_resolved": "12:89:5d:d2:c8:f4",
+          "wlan.addr": "ff:ff:ff:ff:ff:ff",
+          "wlan.addr_resolved": "Broadcast",
+          "wlan.frag": "0",
+          "wlan.seq": "488",
+          "wlan.fcs": "0x7bdda4ea",
+          "wlan.fcs.status": "2"
+        },
+        "wlan.mgt": {
+          "wlan.tagged.all": {
+            "wlan.tag": {
+              "wlan.tag.number": "0",
+              "wlan.tag.length": "0",
+              "wlan.ssid": ""
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "1",
+              "wlan.tag.length": "4",
+              "wlan.supported_rates": "2",
+              "wlan.supported_rates": "4",
+              "wlan.supported_rates": "11",
+              "wlan.supported_rates": "22"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "50",
+              "wlan.tag.length": "8",
+              "wlan.extended_supported_rates": "12",
+              "wlan.extended_supported_rates": "18",
+              "wlan.extended_supported_rates": "24",
+              "wlan.extended_supported_rates": "36",
+              "wlan.extended_supported_rates": "48",
+              "wlan.extended_supported_rates": "72",
+              "wlan.extended_supported_rates": "96",
+              "wlan.extended_supported_rates": "108"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "3",
+              "wlan.tag.length": "1",
+              "wlan.ds.current_channel": "1"
+            },
+            "wlan.tag": {
+              "wlan.tag.number": "221",
+              "wlan.tag.length": "7",
+              "wlan.tag.oui": "5271450",
+              "wlan.tag.vendor.oui.type": "22"
+            }
+          }
+        }
+      }
+    }
+  }
+]

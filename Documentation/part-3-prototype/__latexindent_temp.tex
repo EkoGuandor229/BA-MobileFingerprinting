@@ -1,0 +1,21 @@
+        \subsubsection{Make Unique Function}
+            \begin{algorithm}
+                \KwIn{
+                    \\
+                    $key$: Der Key eines Dictionaries
+                    \\
+                    $dic$: DAs Dictionarie
+                }
+                \KwOut{
+                    \\
+                    $unique\_key$: Der einzigartige Key
+                }
+                $counter$  \equal 0 \;
+                $unique_key$ \equal $key$ \;
+
+                \While{$unique_key$ \in $dct$}{
+                    $counter$ \plus \equal 1
+                    $unique_key$ \equal '{}_{}'.format(key, counter)
+                }
+                \Return{$unique_key$}
+            \end{algorithm}

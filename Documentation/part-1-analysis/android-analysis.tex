@@ -1,0 +1,74 @@
+\cleardoublepage
+
+\section{Android-Analyse
+\label{section:androidanalysis}}
+Android implementierte erstmals mit Android 6 (Marshmallow) Support für Developer
+für die Verschleierung von MAC-Adressen in Probe-Requests.
+
+In Versuchen im Paper "A Study of MAC Adress Randomization in Mobile Devices 
+and when it Fails" von Jeremy Martin et. al. aus dem Jahr 2017 wird beschrieben, 
+dass die meisten Geräte mit Android 6 die Randomisierung der MAC-Adresse auf Hardwareebene 
+gar nicht unterstützen da die Chipsets nicht dazu in der Lage waren.
+
+Erst ab Android 8 (Oreo) wurde die Randomisierung der MAC-Adressen bei Probe-Requests
+von Android Geräten offiziell als Funktion implementiert (zuvor war die Option nur 
+für Developer verfügbar) und standardmäßig verwendet.
+
+Die Versionsgeschichte des Android Betriebssystem ist in der 
+Tabelle~\ref{table:androidversionhistory} ersichtlich.
+
+\subsection{Versionsgeschichte}
+    \begin{table}[H]
+        \begin{tabularx}{\linewidth}{XXXXX}
+            \toprule 
+            \textbf{Name} & \textbf{Nummer} & \textbf{Erscheinung} & \textbf{Supported} & \textbf{API Lvl} \\
+            \midrule
+            Honeycomb & 3.0 - 3.2.6 & 22.02.2011 & No & 11 - 13 \\
+            Icecream Sandwich & 4.0 - 4.0.4 & 18.102011 & No & 14 - 15 \\
+            Jelly Bean & 4.1 - 4.3.1 & 09.07.2012 & No & 16 - 18 \\
+            KitKat & 4.4 - 4.4.4 & 31.10.2013 & No & 19 - 20 \\
+            \rowcolor{lightgray}
+            Lollipop & 5.0 - 5.1.1 & 12.11.2014 & No & 21 - 22 \\
+            \rowcolor{lightgray}
+            Marshmallow & 6.0 - 6.0.1 & 05.10.2015 & No & 23 \\
+            \rowcolor{lightgray}
+            Nougat & 7.0 - 7.1.2 & 22.08.2016 & No & 24 - 25 \\
+            \rowcolor{lightgray}
+            Oreo & 8.0 - 8.1 & 28.08.2017 & Yes & 26 - 27 \\
+            \rowcolor{lightgray}
+            Pie & 9 & 06.08.2018 & Yes & 28 \\
+            \rowcolor{lightgray}
+            Android 10 & 10 & 03.09.2019 & Yes & 29 \\
+            \rowcolor{lightgray}
+            Android 11 & 11 & 08.09.2020 & Yes & 30 \\
+            \bottomrule 
+        \end{tabularx}
+        \caption{Versionsgeschichte des Android, 
+        alle grau eingefärbten Zeilen benutzen MAC-Randomisierung.
+        Supported Devices erhalten noch aktuelle Sicherheitsuptades
+        \label{table:androidversionhistory}}
+    \end{table}
+
+    \clearpage
+
+\subsection{Android 8 - Oreo}
+Ab Android 8.0 verwenden Android-Geräte bei der Suche nach Wi-Fi Netzwerken
+zufällige MAC-Adressen in Probe-Requests.
+Für jeden Scan wird eine neue zufällige Adresse generiert und zusätzlich
+wird die Sequenznummer zufällig generiert.
+
+\subsection{Android 9 - Pie}
+Mit Android 9.0 wurde die Developer-Option hinzugefügt,
+für jede Verbindung mit einem Wi-Fi-Netzwerk eine zufällige MAC-Adresse zu verwenden.
+
+\subsection{Android 10}
+Die Verwendung von zufälligen MAC-Adressen für jedes Netzwerk wurde in Android 10 
+standardmäßig aktiviert. 
+
+\subsection{Android 11}
+In Android 11 Beta 1 wurde die Option "Wi-Fi enhanced MAC Randomization" hinzugefügt.
+Wenn der Access Point dies erlaubt, bzw. wenn auf dem Access Point die MAC-Randomisierung
+aktiviert ist, dann wird jedes Mal, wenn sich das Gerät mit diesem Access Point verbindet,
+eine neue MAC-Adresse generiert.
+
+\clearpage

@@ -1,0 +1,57 @@
+\section{Einleitung}
+
+\subsection{Problemstellung}
+Die Erkennung und Verfolgung von Mobilgeräten anhand ausgesendeter Probe-Requests
+ist in der Industrie eine bekannte Praxis.
+Früher konnte ein Mobilgerät anhand der in Probe-Requests ausgesendeten MAC-Adresse
+mit einem Fingerabdruck versehen werden und über grössere Distanzen und längere 
+Zeit verfolgt werden. 
+Seit einigen Betriebssystemversionen wird die MAC-Adresse aber in Probe-Requests 
+zufallsgeneriert und kann nicht mehr für ein Fingerprinting verwendet werden.
+Die Frage, welche in dieser Arbeit beantwortet werden soll, ist: 
+Senden Mobilgeräte in Probe-Requests genügend Informationen aus, um damit 
+einen Fingerabdruck zu generieren und lassen sich Mobilgeräte anhand dieser 
+Informationen unterscheiden und verfolgen.
+Spezifisch soll ein Verfahren entwickelt werden, welches erlaubt, Mobilgeräte 
+im Empfangsbereich eines WLAN-Access-Point zu zählen.
+Um die Frage zu beantworten, sollen Messungen mit Mobilgeräten durchgeführt werden,
+um Gerätespezifisches Verhalten zu erkennen, welches für ein Fingerprinting 
+verwendet werden kann.
+
+\subsection{Herausforderungen}
+Die grösste Herausforderung ist die Beschaffung der Mobilgeräte, die für die 
+Messungen benötigt werden.
+Um statistisch relevante Ergebnisse erzeugen zu können, sollte eine Vielzahl von 
+Messungen mit unterschiedlichen Geräteherstellern, -typen und -Betriebssystemversionen
+durchgeführt werden können.
+Weiterhin sollten die Messungen in einer Umgebung durchgeführt werden, in der 
+möglichst keine Störsignale aufgezeichnet werden. \\
+Zusätzlich sollten die Messungen in einem möglichst realitätsnahen Umfeld durchgeführt
+werden, was in einer Störungsfreien Umgebung nicht möglich ist.
+
+Eine weitere Herausforderung ist das Zeitmanagement. 
+Werden mehr Messungen durchgeführt, bleibt weniger Zeit, um an einem Prototyp zu 
+arbeiten. 
+Wenn ein Verfahren in der Analyse vielversprechend ist, in der Umsetzung aber 
+nicht funktioniert kann dadurch zusätzlich Zeit verloren gehen.
+
+\clearpage 
+
+\subsection{Vorarbeit}
+In einer Vorarbeit im Herbstsemester 2019/2020 wurde mit einem Machine-Learning-
+Verfahren gearbeitet, welches mit Daten aus der Industrie trainiert wurde.
+Insgesamt wurden 175 Millionen Probes in der Datensammlung analysiert und 
+ein Prototyp entwickelt der gemäss der Dokumentation die Anzahl Passagiere 
+in einem Bus mit $94\%$ Genauigkeit voraussagen kann. 
+
+Die grössten Herausforderungen in der Vorarbeit bestanden darin, dass der Prototyp 
+neben Mobilgeräten auch weitere Geräte im WLAN erkennt und diese nicht 
+Filtern kann und dass Geräte vom selben Hersteller schwierig zu unterscheiden sind.
+
+Vor allem das zweite Problem konnte in den Messungen dieser Arbeit \\ beobachtet und
+bestätigt werden. 
+
+Da in der Vorarbeit mit Datensätzen gearbeitet wurde, welche keine 
+Angaben haben, welcher Probe-Request von welchem Gerät ausgesendet wurde, 
+können diese Daten nicht wiederverwendet werden. 
+\clearpage

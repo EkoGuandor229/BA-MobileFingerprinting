@@ -1,0 +1,14 @@
+%% Custom commands
+%% Usage: \begin{my-theorem}
+%% ===============
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{definition}[theorem]{Definition}
+
+%% Box theorems commands
+%% Usage: \begin{my-theorem}{title}{label}
+%% ===============
+\tcbuselibrary{theorems}
+\newtcbtheorem[number within=section]{hint}{Hint}{fonttitle=\bfseries}{hnt}
+
+\newtcbtheorem[number within=section]{warn}{Note}{colback=red!5!white,colframe=red!75!black}{}
+
